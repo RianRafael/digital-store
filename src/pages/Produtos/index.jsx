@@ -8,7 +8,7 @@ export default function ProdutoHome() {
     const [produtos, setProdutos] = useState([]);
 
         useEffect(()=>{console.log(1)
-            fetch('https://backend-dc-server.onrender.com/produtos').then(res => res.json()).then(data =>setProdutos(data))
+            fetch('https://digitalbackend.onrender.com/produtos').then(res => res.json()).then(data =>setProdutos(data))
 
         }, [])
     return (
